@@ -12,12 +12,7 @@
     <h1>ROCK PAPER SCISSORS!</h1>
     </div>
 
-    <div class="round">
-        <strong>
-        <p>ROUND</p>
-        <p id="roundNo"></p>
-        </strong>
-    </div>
+    
 
     <div class="Match">
 
@@ -26,9 +21,9 @@
             <div class="Choice">
                 <img src="Human" alt="Human Icon" class="hIcon">
                 <div class="Hbutton">
-                    <button><img src="rock.png" alt="rock" class="choiceImg"></button>
-                    <button><img src="paper.png" alt="choiceI" class="choiceImg"></button>
-                    <button><img src="scissors.webp" alt="scissors" class="choiceImg"></button>
+                    <button><img src="rock.png" alt="rock" class="choiceImg" id="rock" onclick="move(1)"></button>
+                    <button><img src="paper.png" alt="paper" class="choiceImg" id="paper" onclick="move(2)"></button>
+                    <button><img src="scissors.webp" alt="scissors" class="choiceImg" id="scissors" onclick="move(3)"></button>
                 </div>
             </div>
 
@@ -37,16 +32,22 @@
         <div class="Computer">
             <span class="humanHeader"><strong> Computer's Choice </strong> </span>
             <div class="Choice">
-                <img src="computer" alt="Human Icon" class="hIcon">
+                <img src="computer" alt="Computer Icon" class="hIcon">
                 <div class="Hbutton">
                     <img src="rock.png" alt="rock" class="choiceImg">
-                    <img src="paper.png" alt="choiceI" class="choiceImg">
+                    <img src="paper.png" alt="paper" class="choiceImg">
                     <img src="scissors.webp" alt="scissors" class="choiceImg">
                 </div>
-            </div>
+                <div class="cs" id="frame"></div>
 
+            </div>
+            
         </div>
 
+    </div>
+
+    <div class="score">
+        Score: Human <span id="humanScore"></span>    Computer <span id="computerScore"></span>
     </div>
 
 </body>
